@@ -23,11 +23,20 @@
         animation: rotateCube 6s linear;
       }
       @keyframes rotateCube {
-     0% {
-          transform: perspective(200px) rotateY(-45deg);
+            0% {
+          transform: rotateY(0deg) rotateX(0deg);
+          }
+        25% {
+          transform: rotateY(-90deg) rotateX(0deg);
+        }
+        50% {
+          transform: rotateY(-90deg) rotateX(180deg);
+        }
+        75% {
+          transform: rotateY(90deg) rotateX(180deg);
         }
         100% {
-          transform: perspective(200px) rotateY(45deg);
+          transform: rotateY(0deg) rotateX(0deg);
         }
       }
       .cube-face {
