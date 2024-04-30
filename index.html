@@ -23,21 +23,13 @@
         animation: rotateCube 6s linear;
       }
       @keyframes rotateCube {
-        0% {
-          transform: rotateY(0deg) rotateX(0deg);
-        }
-        25%,
-        75% {
-          transform: rotateY(-90deg) rotateX(0deg);
-        }
-        50% {
-          transform: rotateY(-90deg) rotateX(180deg);
+     0% {
+          transform: perspective(200px) rotateY(-45deg);
         }
         100% {
-          transform: rotateY(0deg) rotateX(180deg);
+          transform: perspective(200px) rotateY(45deg);
         }
       }
-
       .cube-face {
         position: absolute;
         width: 100%;
